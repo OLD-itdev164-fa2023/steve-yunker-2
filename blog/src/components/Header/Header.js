@@ -4,6 +4,7 @@ import { Link } from "gatsby"
 import styled from 'styled-components'
 import {H1} from '../Heading'
 import {Section} from '../Section'
+import {IconButton} from '../Button'
 
 const Outer = styled.header`
   background: ${props => props.theme.header.backgroundColor};
@@ -34,7 +35,7 @@ const Header = ({ siteTitle }) => (
     </H1>
     </Section>
     <Section width={1/12}>
-      Search
+      <IconButton icon={<Search />} />
     </Section>
   </Outer>
 )
