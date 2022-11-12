@@ -7,6 +7,7 @@ import { GatsbyImage } from 'gatsby-plugin-image';
 const BlogPost = ({ data }) => {
     const { title, body, heroImage } = data.contentfulBlogPost
   
+    
     return (
       <Layout>
         <GatsbyImage
